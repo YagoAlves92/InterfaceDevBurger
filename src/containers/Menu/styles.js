@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BannerHamburger from '../../assets/banner-hamburger.svg';
 import BackGround from '../../assets/background.svg';
 import { Link } from "react-router-dom";
+import back from '../../assets/back.png';
 
 export const Container = styled.div`
     width: 100%;
@@ -62,14 +63,15 @@ export const CategoryButton = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     background: none;
-    color: #9758a6;
+    color: ${props => props.$isActiveCategory ? '#9758a6' : '#696969' };
     font-size: 24px;
     font-weight: 500;
     padding-bottom: 5px;
     line-height: 20px;
-    border-bottom: 3px solid #9758a6;
+    border: none;
+    border-bottom: ${(props) => props.$isActiveCategory && '3px solid #9758a6'};
 
-`
+`;
 
 export const ProductsContainer = styled.div`
     display: grid;
@@ -79,4 +81,21 @@ export const ProductsContainer = styled.div`
     justify-content: center;
     max-width: 1280px;
     margin: 50px auto 0;
+`
+
+export const BackButton = styled.button`
+    margin-left: 10px;
+    color: #ff3205;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    
 `

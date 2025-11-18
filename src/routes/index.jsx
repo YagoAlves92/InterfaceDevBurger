@@ -1,27 +1,45 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { Login } from "../containers/Login";
-import { Register } from "../containers/Register";
-import { Home } from "../containers/Home";
-import { Menu } from "../containers/Menu";
+
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { Cart, Home , Login, Menu, Register } from '../containers';
 
 
 export const router = createBrowserRouter([
     {
-        path:'/login',
+        path: '/login',
         element: <Login />
     },
     {
-        path:'/cadastro',
+        path: '/cadastro',
         element: <Register />
     },
-     {
-        path:'/',
-        element: <Home />
+    {
+        path: '/',
+        element:
+            (
+                <>
+                    <Header />
+                    <Home />
+                    <Footer />
+                </>
+
+            ),
     },
     {
-        path:'/cardapio',
-        element: <Menu />
+        path: '/cardapio',
+        element:
+            (
+                <>
+                    <Header />
+                    <Menu />
+                </>
+            ),
+    },
+    {
+        path: '/carrinho' , 
+        element: <Cart /> 
     }
-   
-])
+
+]);
