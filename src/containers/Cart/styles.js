@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Banner = styled.div` 
     background: url('${Texture}');
     background-size: cover;
-    background-color: #1f1f1f;
+    background-color: ${(props) => props.theme.mainBlack};
     background-position: center;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ export const Title = styled.div`
     font-size: 32px;
     font-weight: 800;
     padding-bottom: 12px;
-    color: #61a120;
+    color: ${(props) => props.theme.gren};
     text-align: center;
     position: relative;
 
@@ -44,14 +44,14 @@ export const Title = styled.div`
         content: '';
         width: 54px;
         height: 4px;
-        background-color: #61a120;
+        background-color: #${(props) => props.theme.gren};
 
     }
 `;
 
 export const Content = styled.div`
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 30%;
     width: 100%;
     gap: 40px;
     max-width: 1280px;

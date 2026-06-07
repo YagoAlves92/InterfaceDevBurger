@@ -8,6 +8,7 @@ import {  useLocation, useNavigate } from "react-router-dom";
 
 
 
+
 export function Menu() {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
@@ -46,7 +47,7 @@ export function Menu() {
         async function loadProducts() {
             const { data } = await api.get('/products')   
 
-            console.log(data[0]);
+           
             
           
 
@@ -69,7 +70,7 @@ export function Menu() {
             setFilteredProducts(products)
         } else {
             const newFilteredProducts = products.filter(
-                (product) => Number(product.category_id) == Number(activeCategory),
+                (product) => Number(product.category_id) === Number(activeCategory),
             );
                 console.log('Filtrados:', newFilteredProducts);
             setFilteredProducts(newFilteredProducts);   

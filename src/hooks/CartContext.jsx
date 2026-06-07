@@ -34,7 +34,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const deleteProduct = (productId) => {
-        const newCart = cartProducts.filter((prd)=> prd.id !== productId.id)
+        const newCart = cartProducts.filter((prd)=> prd.id !== productId)
 
         setCartProducts(newCart)
         updateLocalStorage(newCart)

@@ -24,7 +24,7 @@ export function Header() {
 
         navigate('/login');
     }
-    console.log(userInfo);
+   ;
     return (
         <Container>
             <Content>
@@ -43,7 +43,7 @@ export function Header() {
                     <Profile>
                         <UserCircleIcon color="#FFF" size={24} />
                         <div>
-                            <p>Olá, <span>{userInfo.name}</span></p>
+                            <p>Olá, <span>{userInfo?.name}</span></p>
                         </div>
                         <Logout onClick={logoutUser}>Sair</Logout>
                     </Profile>
