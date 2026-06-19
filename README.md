@@ -65,7 +65,7 @@ Adicione imagens do projeto:
 ```md
 [Home]
 
-<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT1.png">
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT1.png?raw=true">
 
 ![Menu](./screenshots/menu.png)
 
