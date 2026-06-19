@@ -63,7 +63,9 @@ yarn dev
 Adicione imagens do projeto:
 
 ```md
-![Home](./screenshots/home.png)
+[Home]
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT1.png">
 
 ![Menu](./screenshots/menu.png)
 
