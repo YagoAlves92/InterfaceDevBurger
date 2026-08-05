@@ -60,6 +60,12 @@ yarn dev
 
 ## 📸 Screenshots
 
+                                            Login
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">   
+
+
+                                            Cadastro
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">
 
                                              Home
 
