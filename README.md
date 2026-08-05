@@ -1,16 +1,116 @@
-<<<<<<< HEAD
-# React + Vite
+# 🍔 DevBurger Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web da hamburgueria online desenvolvida com React, responsável pela experiência do cliente e do administrador.
 
-Currently, two official plugins are available:
+## 👨‍💻 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Cliente
 
-## Expanding the ESLint configuration
+* Visualização de produtos
+* Filtro por categorias
+* Carrinho de compras
+* Finalização de pedidos
+* Integração com Stripe Checkout
+* Responsividade para dispositivos móveis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# APIDevBurger
->>>>>>> 7669a7f603d0322f875580c50fc2064b3e3f0604
+### Administrador
+
+* Login administrativo
+* Gerenciamento de produtos
+* Gerenciamento de categorias
+* Controle de pedidos
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+* React.js
+* React Router DOM
+* Styled Components
+* Axios
+* React Hook Form
+* Yup
+* Context API
+
+---
+
+## 👨‍💻 Acesso
+
+  http://localhost:3001
+  
+
+
+---
+
+## ▶️ Executando o Projeto
+
+Instalar dependências:
+
+```bash
+npm install
+```
+
+Executar aplicação:
+
+```bash
+yarn dev
+```
+
+---
+
+## 📸 Screenshots
+
+                                            Login
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">   
+
+
+                                            Cadastro
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">
+
+                                             Home
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT1.png?raw=true">
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT2.png?raw=true">
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT3.png?raw=true">
+
+
+                                               Menu
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaCardapio.png?raw=true">
+
+                                             Carrinho
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaCarrinho.png?raw=true">
+
+                                              Pagamento
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaPagamento.png?raw=true">
+
+
+<b>[Admin]</b>
+
+
+                                           ADICIONAR PRODUTO 
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaAdcProdutosADM.png?raw=true">
+
+                                             PAINEL PEDIDOS
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaPedidosADM.png?raw=true">
+
+                                            EDIÇÃO DE PRODUTOS
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaProdutosADM.png?raw=true">
+
+---
+
+## 🔗 Backend
+
+Este projeto consome a API disponível no repositório Backend do DevBurger.
+
+---
+
+## 👨‍💻 Autor
+
+Yago Oliveira
+
+Desenvolvedor Full Stack em formação focado em React e Node.js.
