@@ -1,60 +1,67 @@
 import { useEffect, useState } from 'react';
-import {api} from '../../services/api';
+import { api } from '../../services/api';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Container, ContainerItems, Title } from './styles';
+import { CategoryButton, Container, ContainerItems, Title } from './styles';
 
 
-export function CategoriesCarousel (){
-    const [categories , setCategories] = useState([]);
 
-    useEffect(()=>{
-        async function loadCategories(){
-            const {data} = await api.get('/categories')
+
+export function CategoriesCarousel() {
+    const [categories, setCategories] = useState([]);
+
+
+
+    useEffect(() => {
+        async function loadCategories() {
+            const { data } = await api.get('/categories')
 
             setCategories(data)
-            console.log(data);
+
         }
 
         loadCategories()
     }, [])
 
     const responsive = {
-        superLargeDesktop:{
-            breakpoint: { max: 4000, min: 3000},
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
             items: 4,
         },
         desktop: {
-             breakpoint: { max: 3000, min: 1280},
+            breakpoint: { max: 3000, min: 1280 },
             items: 4,
         },
         tablet: {
-             breakpoint: { max: 1280, min: 690},
+            breakpoint: { max: 1280, min: 690 },
             items: 4,
         },
         mobile: {
-             breakpoint: { max: 690, min: 0},
+            breakpoint: { max: 690, min: 0 },
             items: 4,
         },
     };
 
-    return(
+    return (
         <Container>
             <Title>Categorias</Title>
 
             <Carousel
                 responsive={responsive}
                 infinite={true}
-                partialVisbile={false}
+                partialVisible={false}
                 itemClass='carousel-item'
             >
-                {categories.map( category => (
-                    <ContainerItems key={category.id} imageUrl={category.url}>
-                        <p>{category.name}</p>
-                </ContainerItems>
+                {categories.map(category => (
+                    <ContainerItems key={category.id} imageUrl={category.url}
+                    >
+                        <CategoryButton
+                           to={`/cardapio?categoria=${category.id}`}
+                        >{category.name}</CategoryButton>
+                    </ContainerItems>
 
                 ))}
-                
+
             </Carousel>
         </Container>
     )

@@ -46,8 +46,10 @@ Interface web da hamburgueria online desenvolvida com React, responsável pela e
 
 Instalar dependências:
 
-```bash
-yarn install
+
+
+npm install
+
 ```
 
 Executar aplicação:
@@ -60,6 +62,7 @@ yarn dev
 
 ## 📸 Screenshots
 
+
 Adicione imagens do projeto:
 
 ```md
@@ -71,6 +74,48 @@ Adicione imagens do projeto:
 
 ![Admin](./screenshots/admin.png)
 ```
+
+                                            Login
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">   
+
+
+                                            Cadastro
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaLogin.png?raw=true">
+
+                                             Home
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT1.png?raw=true">
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT2.png?raw=true">
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaHomePT3.png?raw=true">
+
+
+                                               Menu
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaCardapio.png?raw=true">
+
+                                             Carrinho
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaCarrinho.png?raw=true">
+
+                                              Pagamento
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaPagamento.png?raw=true">
+
+
+<b>[Admin]</b>
+
+
+                                           ADICIONAR PRODUTO 
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaAdcProdutosADM.png?raw=true">
+
+                                             PAINEL PEDIDOS
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaPedidosADM.png?raw=true">
+
+                                            EDIÇÃO DE PRODUTOS
+
+<img src="https://github.com/YagoAlves92/InterfaceDevBurger/blob/DevBurger/src/assets/TelaProdutosADM.png?raw=true">
+
 
 ---
 

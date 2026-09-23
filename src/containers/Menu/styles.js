@@ -3,10 +3,11 @@ import BannerHamburger from '../../assets/banner-hamburger.svg';
 import BackGround from '../../assets/background.svg';
 import { Link } from "react-router-dom";
 
+
 export const Container = styled.div`
     width: 100%;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: ${(props) => props.theme.secondWhite};
 
     background: linear-gradient(
         rgba(255,255,255,0.6),
@@ -27,7 +28,7 @@ export const Banner = styled.div`
     position: relative;
 
     background: url('${BannerHamburger}') no-repeat;
-    background-color: #1f1f1f;
+    background-color: ${(props) => props.theme.main};
     background-position: center;
     background-size: cover;
 
@@ -36,7 +37,7 @@ export const Banner = styled.div`
         font-family: 'Road Rage' , sans-serif;
         font-size: 80px;
         line-height: 65px;
-        color: #FFF;
+        color: ${(props) => props.theme.white};
         position: absolute;
         
         right: 20%;
@@ -45,7 +46,7 @@ export const Banner = styled.div`
 
     span{
         display: block;
-        color: #FFF;
+        color: ${(props) => props.theme.white};
         font-size: 20px;
     }
 
@@ -62,14 +63,15 @@ export const CategoryButton = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     background: none;
-    color: #9758a6;
+    color: ${props => props.$isActiveCategory ? `(props) => props.theme.purple` : '#696969' };
     font-size: 24px;
     font-weight: 500;
     padding-bottom: 5px;
     line-height: 20px;
-    border-bottom: 3px solid #9758a6;
+    border: none;
+    border-bottom: ${(props) => props.$isActiveCategory && `3px solid ${(props) => props.theme.purple}`};
 
-`
+`;
 
 export const ProductsContainer = styled.div`
     display: grid;
@@ -80,3 +82,24 @@ export const ProductsContainer = styled.div`
     max-width: 1280px;
     margin: 50px auto 0;
 `
+
+export const BackButton = styled.button` 
+    margin: 10px;
+    width: 70px;
+    height: 50px;
+    color: ${(props) => props.theme.secondWhite};
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover{
+        opacity: 0.8;
+    }
+
+    
+`
+

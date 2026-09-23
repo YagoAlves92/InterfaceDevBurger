@@ -12,7 +12,7 @@ export const Banner = styled.div`
     h1{
         font-family: 'Road Rage' , sans-serif;
         font-size: 80px;
-        color: #F4F4F4;
+        color: ${(props) => props.theme.darkWhite};
         position: absolute;
         right: 20%;
         top: 10%;
