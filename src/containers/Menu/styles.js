@@ -83,16 +83,19 @@ export const ProductsContainer = styled.div`
     margin: 50px auto 0;
 `
 
-export const BackButton = styled.button`
-    margin-left: 10px;
-    color: ${(props) => props.theme.red};
+export const BackButton = styled.button` 
+    margin: 10px;
+    width: 70px;
+    height: 50px;
+    color: ${(props) => props.theme.secondWhite};
     text-decoration: none;
+    font-size: 40px;
     font-weight: 700;
     background-color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    
     &:hover{
         opacity: 0.8;
     }
