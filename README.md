@@ -1,63 +1,102 @@
-# 🍔 DevBurger Frontend
+🍔 DevBurger — Frontend
 
-Interface web da hamburgueria online desenvolvida com React, responsável pela experiência do cliente e do administrador.
+Interface web de uma hamburgueria online desenvolvida com React.js, que oferece uma experiência completa para clientes realizarem pedidos e para administradores gerenciarem produtos, categorias e pedidos.
 
-## 👨‍💻 Funcionalidades
+🌐 Aplicação em produção: <a href="https://interface-dev-burger.vercel.app/">Acessar o DevBurger</a>
 
-### Cliente
+📌 Funcionalidades
 
-* Visualização de produtos
-* Filtro por categorias
-* Carrinho de compras
-* Finalização de pedidos
-* Integração com Stripe Checkout
-* Responsividade para dispositivos móveis
+🛒 Área do cliente
 
-### Administrador
+Visualização do cardápio de produtos.
 
-* Login administrativo
-* Gerenciamento de produtos
-* Gerenciamento de categorias
-* Controle de pedidos
+Filtragem de produtos por categoria.
 
----
+Carrinho de compras.
 
-## 🛠 Tecnologias Utilizadas
+Finalização de pedidos.
 
-* React.js
-* React Router DOM
-* Styled Components
-* Axios
-* React Hook Form
-* Yup
-* Context API
-
----
-
-## 👨‍💻 Acesso
-
-  http://localhost:3001
-  
+Integração com o fluxo de pagamento via Stripe.
 
 
----
 
-## ▶️ Executando o Projeto
+🔐 Área administrativa
 
-Instalar dependências:
+Autenticação de usuários administradores.
 
-```bash
+Gerenciamento de produtos.
+
+Gerenciamento de categorias.
+
+Visualização e gerenciamento de pedidos.
+
+🛠️ Tecnologias utilizadas
+
+React.js — construção da interface.
+
+React Router DOM — navegação entre páginas.
+
+Styled Components — estilização dos componentes.
+
+Axios — comunicação com a API.
+
+React Hook Form — gerenciamento de formulários.
+
+Yup — validação de dados.
+
+Context API — gerenciamento de estado compartilhado.
+
+🔗 Repositórios
+
+Frontend: InterfaceDevBurger
+
+Backend: APIDevBurger
+
+🚀 Como executar o projeto localmente
+
+Pré-requisitos
+
+Node.js instalado.
+
+Yarn ou npm.
+
+API do DevBurger configurada e em execução.
+
+1. Clone o repositório
+
+git clone https://github.com/YagoAlves92/InterfaceDevBurger.git
+
+2. Acesse a pasta do projeto
+
+cd InterfaceDevBurger
+
+3. Instale as dependências
+
+Com Yarn:
+
+yarn
+
+Ou com npm:
+
 npm install
-```
 
-Executar aplicação:
+4. Configure as variáveis de ambiente
 
-```bash
+Configure a variável VITE_API_URL com a URL da API que será utilizada pelo frontend.
+
+Para desenvolvimento local, use a URL da API local conforme a configuração do backend.
+
+5. Inicie a aplicação
+
+Com Yarn:
+
 yarn dev
-```
 
----
+Ou com npm:
 
+npm run dev
+
+O Vite exibirá no terminal o endereço local para acessar a aplicação.
 ## 📸 Screenshots
 
                                             Login
