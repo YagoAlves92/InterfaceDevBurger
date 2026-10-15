@@ -48,9 +48,9 @@ Context API — gerenciamento de estado compartilhado.
 
 🔗 Repositórios
 
-Frontend: InterfaceDevBurger
+Frontend: <a href="https://github.com/YagoAlves92/InterfaceDevBurger">InterfaceDevBurger</a>
 
-Backend: APIDevBurger
+Backend: <a href="https://github.com/YagoAlves92/APIDevBurger">APIDevBurger</a>
 
 🚀 Como executar o projeto localmente
 
@@ -63,23 +63,23 @@ Yarn ou npm.
 API do DevBurger configurada e em execução.
 
 1. Clone o repositório
-
+```
 git clone https://github.com/YagoAlves92/InterfaceDevBurger.git
-
+```
 2. Acesse a pasta do projeto
-
+```
 cd InterfaceDevBurger
-
+````
 3. Instale as dependências
 
 Com Yarn:
-
+```
 yarn
-
+```
 Ou com npm:
-
+```
 npm install
-
+```
 4. Configure as variáveis de ambiente
 
 Configure a variável VITE_API_URL com a URL da API que será utilizada pelo frontend.
@@ -89,13 +89,13 @@ Para desenvolvimento local, use a URL da API local conforme a configuração do 
 5. Inicie a aplicação
 
 Com Yarn:
-
+```
 yarn dev
-
+```
 Ou com npm:
-
+```
 npm run dev
-
+``` 
 O Vite exibirá no terminal o endereço local para acessar a aplicação.
 ## 📸 Screenshots
 
